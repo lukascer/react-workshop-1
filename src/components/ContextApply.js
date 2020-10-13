@@ -1,8 +1,13 @@
+/* eslint-disable react/no-unused-state */
 import LocaleContext from './LocaleContext';
 
 const LocaleTogglerButton = () => (
     <LocaleContext.Consumer>
-        {({ locale, toggleLocale }) => <button onClick={toggleLocale}>Toggle Locale from {locale}</button>}
+        {({ locale, toggleLocale }) => (
+            <button type="button" onClick={toggleLocale}>
+                Toggle Locale from {locale}
+            </button>
+        )}
     </LocaleContext.Consumer>
 );
 

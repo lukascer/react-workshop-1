@@ -1,3 +1,4 @@
+/* eslint-disable react/state-in-constructor */
 class Input extends React.PureComponent {
     state = {
         bar: '',

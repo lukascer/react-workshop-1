@@ -1,3 +1,5 @@
+/* eslint-disable react/state-in-constructor */
+/* eslint-disable react/forbid-prop-types */
 import PropTypes from 'prop-types';
 
 import React from 'react';
@@ -5,7 +7,7 @@ import React from 'react';
 const Table = ({ items }) => (
     <table>
         <tbody>
-            {items.map((item, index) => (
+            {items.map(item => (
                 <tr key={item.id}>
                     <td>{item.id}</td>
                     <td>{item.name}</td>
@@ -21,7 +23,7 @@ Table.propTypes = {
 
 const Grid = ({ items }) => (
     <div className="row">
-        {items.map((item, index) => (
+        {items.map(item => (
             <div className="col" key={item.id}>
                 <span>{item.id}</span>
                 <span>{item.name}</span>

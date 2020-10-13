@@ -1,3 +1,5 @@
+/* eslint-disable react/state-in-constructor */
+/* eslint-disable react/forbid-prop-types */
 import PropTypes from 'prop-types';
 import withLoading from './withLoading';
 
@@ -39,7 +41,7 @@ class Hoc extends React.PureComponent {
             const response = await fetch(`https://api.github.com/users/martinkristof/repos`);
             const repos = await response.json();
 
-            this.setState({ loading: false, repos: repos });
+            this.setState({ loading: false, repos });
         } catch (e) {
             this.setState({ loading: false, error: e.message });
         }

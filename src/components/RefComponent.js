@@ -1,5 +1,5 @@
 const FancyButton = React.forwardRef(({ children }, ref) => (
-    <button ref={ref} className="btn">
+    <button type="button" ref={ref} className="btn">
         {' '}
         {children}
     </button>

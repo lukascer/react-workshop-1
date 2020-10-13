@@ -17,9 +17,9 @@ class UncontrolledForm extends React.PureComponent {
             <>
                 <h2>Uncontrolled Form</h2>
                 <form onSubmit={this.handleSubmit}>
-                    <label>
+                    <label htmlFor="file">
                         Upload file:
-                        <input type="file" ref={this.fileInput} />{' '}
+                        <input id="file" type="file" ref={this.fileInput} />{' '}
                     </label>
                     <br />
                     <input type="text" defaultValue="foo" ref={this.textInput} />

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const List = ({ numbers, type }) => {
-    const listItems = numbers.map((number, index) => <ListItem key={type + number.toString()} value={number} />);
+    const listItems = numbers.map(number => <ListItem key={type + number.toString()} value={number} />);
 
     return <ul>{listItems}</ul>;
 };

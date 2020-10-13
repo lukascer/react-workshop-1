@@ -1,3 +1,5 @@
+/* eslint-disable react/forbid-prop-types */
+/* eslint-disable max-classes-per-file */
 import PropTypes from 'prop-types';
 
 const TodoList = ({ todos }) => (
@@ -38,7 +40,9 @@ class Control extends React.PureComponent {
         return (
             <div>
                 <input onChange={this.handleOnChange} type="text" value={this.state.value} />
-                <button onClick={this.handleOnClick}>Add Todo</button>
+                <button type="button" onClick={this.handleOnClick}>
+                    Add Todo
+                </button>
             </div>
         );
     }

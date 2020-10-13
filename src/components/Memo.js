@@ -30,11 +30,12 @@ const Memo = () => {
     const letterCount = computeLetterCount(word);
     return (
         <div style={{ padding: '15px' }}>
-            <h2>Compute number of letters (slow 🐌)</h2>
+            <h2>Compute number of letters (slow)</h2>
             <p>
                 "{word}" has {letterCount} letters
             </p>
             <button
+                type="button"
                 onClick={() => {
                     const next = wordIndex + 1 === words.length ? 0 : wordIndex + 1;
 
@@ -43,9 +44,11 @@ const Memo = () => {
             >
                 Next word
             </button>
-            <h2>Increment a counter (fast ⚡️)</h2>
+            <h2>Increment a counter (fast)</h2>
             <p>Counter: {count}</p>
-            <button onClick={() => setCount(count + 1)}>Increment</button>
+            <button type="button" onClick={() => setCount(count + 1)}>
+                Increment
+            </button>
         </div>
     );
 };

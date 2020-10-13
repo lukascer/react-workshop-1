@@ -1,9 +1,10 @@
+/* eslint-disable react/state-in-constructor */
 class Click extends React.PureComponent {
     state = {
         toggled: false,
     };
 
-    handleClick = event => {
+    handleClick = () => {
         this.setState(state => ({ toggled: !state.toggled }));
     };
 
@@ -11,7 +12,9 @@ class Click extends React.PureComponent {
         return (
             <>
                 <h2>Click</h2>
-                <button onClick={this.handleClick}>{this.state.toggled ? 'On' : 'Off'}</button>
+                <button type="button" onClick={this.handleClick}>
+                    {this.state.toggled ? 'On' : 'Off'}
+                </button>
             </>
         );
     }

@@ -5,8 +5,12 @@ export const Counter = () => {
     return (
         <>
             <h2>useState</h2>
-            <button onClick={() => setCount(count + 1)}>{count}</button>
-            <button onClick={() => setNic(nic + 1)}>{nic}</button>
+            <button type="button" onClick={() => setCount(count + 1)}>
+                {count}
+            </button>
+            <button type="button" onClick={() => setNic(nic + 1)}>
+                {nic}
+            </button>
         </>
     );
 };
@@ -31,8 +35,12 @@ export const Effects = () => {
     return (
         <>
             <h2>useEffect</h2>
-            <button onClick={reRender}>Re-render</button>
-            <button onClick={toggle}>Show/Hide LifecycleDemo</button>
+            <button type="button" onClick={reRender}>
+                Re-render
+            </button>
+            <button type="button" onClick={toggle}>
+                Show/Hide LifecycleDemo
+            </button>
             {mounted && <LifecycleDemo random={random} />}
         </>
     );
@@ -56,8 +64,12 @@ export const CounterWithDispatcher = () => {
         <>
             <h2>useReducer</h2>
             Count: {state.count}
-            <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
-            <button onClick={() => dispatch({ type: 'increment' })}>+</button>
+            <button type="button" onClick={() => dispatch({ type: 'decrement' })}>
+                -
+            </button>
+            <button type="button" onClick={() => dispatch({ type: 'increment' })}>
+                +
+            </button>
         </>
     );
 };

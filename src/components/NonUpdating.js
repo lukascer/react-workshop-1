@@ -19,7 +19,9 @@ class NonUpdating extends React.Component {
         return (
             <>
                 <h2>Click</h2>
-                <button onClick={this.handleClick}>{this.state.toggled ? 'On' : 'Off'}</button>
+                <button type="button" onClick={this.handleClick}>
+                    {this.state.toggled ? 'On' : 'Off'}
+                </button>
             </>
         );
     }
