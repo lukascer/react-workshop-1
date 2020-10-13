@@ -6,11 +6,7 @@ const LocaleTogglerButton = () => (
     </LocaleContext.Consumer>
 );
 
-const Text = () => (
-    <LocaleContext.Consumer>
-        {({ locale }) => <h2>{locale}</h2>}
-    </LocaleContext.Consumer>
-);
+const Text = () => <LocaleContext.Consumer>{({ locale }) => <h2>{locale}</h2>}</LocaleContext.Consumer>;
 
 const Content = () => (
     <div>
