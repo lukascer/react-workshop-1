@@ -28,19 +28,29 @@ class Index extends Component {
                     <h1>React workshop 1</h1>
                     <div className={styles.main}>
                         <h2>We will play</h2>
+                        {/* Slide 52 */}
                         {/* <Heading title="Nadpis">Playground</Heading> */}
+                        {/* Slide 53 */}
                         {/* <Click /> */}
                         {/* <Input /> */}
+                        {/* Slide 54 */}
                         {/* <NonUpdating /> */}
+                        {/* Slide 55 */}
                         {/* <RefComponent /> */}
+                        {/* Slide 57 */}
                         {/* <List numbers={[1, 3, 5]} type="a" />
-                    <List numbers={[1, 3, 5]} type="b" /> */}
+                        <List numbers={[1, 3, 5]} type="b" /> */}
+                        {/* Slide 58 */}
                         {/* <LiftStateUp /> */}
                         {/* <UncontrolledForm /> */}
+                        {/* Slide 63 */}
                         {/* <ItemsGrid /> */}
                         {/* <ItemsTable /> */}
+                        {/* Slide 65 */}
                         {/* <Hoc /> */}
+                        {/* Slide 67 */}
                         {/* <ContextApply /> */}
+                        {/* Slide 68 */}
                         {/* <Counter /> */}
                         {/* <Effects /> */}
                         {/* <CounterWithDispatcher /> */}
